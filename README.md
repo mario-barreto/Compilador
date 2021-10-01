@@ -33,11 +33,12 @@ all: calc_mario.l calc_mario.y
 
 ### Comentário de linha única
 ```
-@@ para comentar uma única linha, adicione dois arrobas na frente da mesma
+@@ Para comentar uma única linha, adicione dois arrobas antes da mesma.
 ```
 ### Comentário de múltiplas linhas
 ```
-/* ... */ para comentar múltiplas linhas, adicione /* e */ nos extremos da faixa de código que você deseja comentar
+@* ... *@
+Para comentar múltiplas linhas, adicione @* e *@ nos extremos da faixa de código que você deseja comentar.
 ```
 
 ### Atribuição de valores à variáveis
@@ -65,27 +66,22 @@ ESCREVA(c)
 ```
 ESCREVA(3 + 7)
 ```
-
 ##### Subtração
 ```
 ESCREVA(3 - 7)
 ```
-
 ##### Multiplicação
 ```
 ESCREVA(8 * 2)
 ```
-
 ##### Divisão
 ```
 ESCREVA(8 / 2)
 ```
-
 ##### Exponenciação
 ```
 ESCREVA(2 ^ 4)
 ```
-
 ##### Radiciação
 ```
 ESCREVA(RAIZ(9))
