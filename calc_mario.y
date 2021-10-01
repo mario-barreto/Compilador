@@ -62,27 +62,21 @@ comandos: LEITURA '(' VARIAVEL ')' {
 
 expre: expre '+' expre {
         $$ = $1 + $3;
-        //printf ("%.2f + %.2f = %.2f\n", $1, $3, $$);
     }
     | expre '-' expre {
         $$ = $1 - $3;
-        //printf ("%.2f - %.2f = %.2f\n", $1, $3, $$);
     }
     | expre '*' expre {
         $$ = $1 * $3;
-        //printf ("%.2f * %.2f = %.2f\n", $1, $3, $$);
     }
     | expre '/' expre {
         $$ = $1 / $3;
-        //printf ("%.2f / %.2f = %.2f\n", $1, $3, $$);
     }
     | expre '^' expre {
         $$ = pow($1, $3);
-        //printf ("%.2f ^ %.2f = %.2f\n", $1, $3, $$);
     }
     | RAIZ '(' expre ')' {
         $$ = sqrt($3);
-        //printf ("raiz quadrada de %.2f = %.2f\n", $3, $$);
     }
     | '(' expre ')' {
         $$ = $2;
