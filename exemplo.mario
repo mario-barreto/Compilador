@@ -1,0 +1,18 @@
+#INICIO
+
+a = 5 * 3
+b = 2.57
+c = a + b
+ESCREVA(a)
+ESCREVA(b)
+ESCREVA(c)
+
+LEIA(a)
+LEIA(b)
+ESCREVA(a)
+ESCREVA(b)
+ESCREVA(a * b)
+
+ESCREVA(2 ^ 5 * (5/2 + RAIZ(25) - 7))
+
+#FIM
