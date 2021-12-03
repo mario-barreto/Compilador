@@ -91,7 +91,7 @@ escreva("A: ")
 leia(a)
 se(a == 1) {
   escreva("Oi!", "\n")
-} senão {
+} senao {
   escreva("Tchau!", "\n")
 }
 ```
