@@ -1,0 +1,39 @@
+@INICIO
+    string nome1 = "Mario"
+    string nome2 = "Barreto"
+    escreva(nome1, " ", nome2, "\n\n")
+    
+    float x = 2.2
+    float y = 2.2
+    se(x > y) {
+        escreva("X eh maior", "\n\n")
+    } se(x < y) { 
+        escreva("Y eh maior", "\n\n")
+    } se(x == y) {
+        escreva("X e Y sao iguais", "\n\n")
+    }
+
+    x = 0
+    enquanto(x <= 5) {
+        escreva(x, "\n")
+        x++
+    }
+    escreva("\n")   
+    x = 5
+    enquanto(x >= 0) {
+        escreva(x, "\n")
+        x--
+    }
+    escreva("\n")
+    
+    int v1 = 10
+    int v2
+    int v3
+    escreva("Digite V2: ")
+    leia(v2)
+    v3 = v1 + v2
+    escreva("V1: ", v1, "\n", "V2: ", v2, "\n", "V3: ", v3, "\n\n") 
+
+    x = 2 ^ 5 * (7/3 + raiz(25) - 7)
+    escreva("Resultado: ", x, "\n")
+@FIM

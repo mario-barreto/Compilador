@@ -1,0 +1,43 @@
+@INICIO
+    escreva("*** URI #1151 - Fibonacci Facil ***", "\n")
+    escreva("A seguinte sequencia de numeros 0 1 1 2 3 5 8 13 21... eh conhecida como serie de Fibonacci. Nessa sequencia, cada numero, depois dos 2 primeiros, eh igual a soma dos 2 anteriores. Escreva um algoritmo que leia um inteiro N (N < 46) e mostre os N primeiros numeros dessa serie.", "\n\n")
+    escreva("Entrada:", "\n", "\t", "A entrada contem um valor inteiro N.", "\n\n")
+    escreva("Saida:", "\n", "\t", "Os valores devem ser mostrados na mesma linha, separados por um espaco em branco. Nao deve haver espaco apos o ultimo valor.", "\n\n")    
+    
+    int n
+    int i = 3
+    int anterior = 0
+    int proximo = 1
+    int soma
+
+    escreva("Escreva um valor inteiro para N: ")
+    leia(n)
+    escreva("\n")
+    
+    se(n == 0) {
+        escreva("N deve ser maior que 0.", "\n")
+    }
+    se(n == 1) {
+        escreva("Sequencia: ", anterior, "\n")
+    }
+    se(n > 1) {
+        se(n == 2) {
+            escreva("Sequencia: ", anterior, " ", proximo, "\n")
+        } senao {
+            escreva("Sequencia: ", anterior, " ", proximo, " ")
+        }
+
+        enquanto(i <= n) {
+            soma = anterior + proximo 
+            anterior = proximo
+            proximo = soma
+
+            se(i == n) {
+                escreva(soma, "\n")
+            } senao {
+                escreva(soma, " ")
+            }
+            i++
+        }
+    }
+@FIM

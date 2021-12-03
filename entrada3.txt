@@ -1,0 +1,19 @@
+@INICIO
+    escreva("*** URI #1153 - Fatorial Simples ***", "\n")
+    escreva("Ler um valor N. Calcular e escrever seu respectivo fatorial. Fatorial de N = N * (N-1) * (N-2) * (N-3) * ... * 1.", "\n\n")
+    escreva("Entrada:", "\n", "\t", "A entrada contem um valor inteiro N.", "\n\n")
+    escreva("Saida:", "\n", "\t", "A saida contem um valor inteiro, correspondente ao fatorial de N.", "\n\n")
+
+    int n
+    int resultado = 1
+    escreva("Escreva um valor inteiro para N: ")
+    leia(n)
+
+    int i = n
+
+    enquanto(i >= 1) {
+        resultado = resultado * i
+        i--
+    }
+    escreva("\n", n, "! = ", resultado, "\n")
+@FIM
